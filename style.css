@@ -1,0 +1,145 @@
+/* ------------------------- */
+/* Basic reset               */
+/* ------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fdf6ec;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ------------------------- */
+/* Header                    */
+/* ------------------------- */
+.menu-header {
+  background-color: #d84315;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.menu-header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.menu-header p {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ------------------------- */
+/* Layout                    */
+/* ------------------------- */
+.menu-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.menu-category {
+  margin-bottom: 40px;
+}
+
+.menu-category h2 {
+  font-size: 1.6rem;
+  color: #d84315;
+  border-bottom: 2px solid #d84315;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* ------------------------- */
+/* Menu item card             */
+/* ------------------------- */
+.menu-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.item-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.item-top h3 {
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.item-details {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.item-price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #d84315;
+}
+
+/* Veg / Non-Veg indicator dot */
+.veg-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  border: 2px solid;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.veg-dot.veg {
+  border-color: #2e7d32;
+  background-color: #66bb6a;
+}
+
+.veg-dot.non-veg {
+  border-color: #c62828;
+  background-color: #ef5350;
+}
+
+/* Unavailable items */
+.menu-item.unavailable {
+  opacity: 0.6;
+}
+
+.item-status {
+  font-size: 0.8rem;
+  color: #c62828;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+/* ------------------------- */
+/* Footer                    */
+/* ------------------------- */
+.menu-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #999;
+}
